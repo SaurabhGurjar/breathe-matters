@@ -55,7 +55,7 @@ export default function Hero() {
         initial={{ x: 150, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.2 }}
-        className="hidden 2xl:block 2xl:w-[949px] 2xl:h-[888px] -ml-24 relative top-1"
+        className="hidden 2xl:block 2xl:w-[949px] 2xl:h-[888px] -ml-12 relative top-1"
       >
         <div
           className="
@@ -86,7 +86,7 @@ export default function Hero() {
             duration: 3,
             ease: "linear",
           }}
-          className="absolute top-[668px] left-[145px] w-[38px] h-[38px] rounded-full bg-[#008080]"
+          className="absolute top-[568px] left-[145px] w-[38px] h-[38px] rounded-full bg-[#008080]"
         ></motion.div>
         <motion.div
           animate={{ y: [0, -25, 0] }}
@@ -96,7 +96,7 @@ export default function Hero() {
             duration: 6,
             ease: "linear",
           }}
-          className="absolute top-[102px] left-[100px] w-[38px] h-[38px] rounded-full bg-[#008080]"
+          className="absolute top-[50px] left-[50px] w-[38px] h-[38px] rounded-full bg-[#008080]"
         ></motion.div>
         <motion.div
           animate={{ y: [0, 25, 0] }}
@@ -119,7 +119,7 @@ export default function Hero() {
             repeatType: "loop",
             ease: "linear",
           }}
-          className="absolute top-[740px] left-[350px] w-[87px] h-[87px] rounded-full bg-[#008080]"
+          className="absolute top-[680px] left-[250px] w-[87px] h-[87px] rounded-full bg-[#008080]"
         ></motion.div>
       </motion.div>
     </section>
