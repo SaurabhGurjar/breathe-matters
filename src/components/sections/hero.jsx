@@ -5,31 +5,31 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="flex w-[1503px]">
+    <section className="flex flex-col 2xl:flex-row 2xl:w-[1503px]">
       <motion.div
         initial={{ x: -150, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1.5 }}
-        className="flex flex-col gap-[61px] max-w-[738px] p-2.5"
+        transition={{ duration: 1.2 }}
+        className="flex flex-col justify-center 2xl:justify-start gap-[31px] 2xl:gap-[61px] 2xl:w-[738px] p-2.5"
       >
-        <div className="w-[298px] h-[182px]">
+        <div className="w-[100px] 2xl:w-[298px] 2xl:h-[182px]">
           <Image src="/wind1.png" width={800} height={800} alt="wind" />
         </div>
-        <div className="flex flex-col gap-[33px]">
-          <div className="w-[735px]">
-            <h2 className="font-spectral text-[48px] text-[#101010] font-semibold">
+        <div className="flex justify-center 2xl:items-start items-center flex-col gap-[33px]">
+          <div className="2xl:w-[735px]">
+            <h2 className="font-spectral text-[36px] 2xl:text-[48px] text-[#101010] font-semibold">
               Start Your new journey <br />
               with <span className="text-[#6BB5B5]">breathe matters</span>
             </h2>
-            <p className="text-[#888888] text-[24px] font-nunito font-normal">
+            <p className="text-[#888888] text-[18px] 2xl:text-[24px] font-nunito font-normal">
               Elevating well-being through innovative solutions, where every
               breath unfolds a path to tranquility and vibrant living.
             </p>
           </div>
-          <div className="flex gap-[38px] items-center">
+          <div className="flex flex-col-reverse 2xl:flex-row gap-[16px] 2xl:gap-[38px] 2xl:justify-start items-center">
             <Button className="w-[268px] h-[58px] bg-[#008080] text-white rounded-[8px] shadow-[0px_4px_4px_rgba(0,0,0,0.2)] font-semibold text-[24px] hover:bg-[#008080]">
               Join Us
-            </Button>
+            </Button> 
             <div className="flex flex-col justify-center items-center px-2 py-[5px] gap-[11px] text-[#101010]">
               <Image
                 src="/trust.png"
@@ -54,8 +54,8 @@ export default function Hero() {
       <motion.div
         initial={{ x: 150, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1.5 }}
-        className="min-w-[949px] h-[888px] -ml-24 relative top-1"
+        transition={{ duration: 1.2 }}
+        className="hidden 2xl:block 2xl:w-[949px] 2xl:h-[888px] -ml-24 relative top-1"
       >
         <div
           className="
@@ -68,7 +68,7 @@ export default function Hero() {
             width={1000}
             height={1000}
             alt="hero banner"
-            className="w-[949px]"
+            className="2xl:w-[949px]"
           />
         </div>
         <Image
